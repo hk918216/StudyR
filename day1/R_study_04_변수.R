@@ -45,3 +45,4 @@ result<- (salt/(salt+water))*100
 cat('소금 =',salt,'mg, 물 =',water,'ml : 농도 =',result, '%')
 
 
+
