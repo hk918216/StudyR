@@ -53,4 +53,40 @@ sum(d[d>5])
 condi<- d > 5 & d < 8
 d[condi]
 
+## LAB 카페 매출액
+#스스로
+es <- c(4,5,3,6,5,4,7)
+am <- c(63,68,64,68,72,89,94)
+cl <- c(61,70,59,71,71,92,88)
+w <- c('월','화','수','목','금','토','일')
+names(es) <- w
+names(am) <- w
+names(cl) <- w
+
+es.total <- es*2000
+
+#w.강의
+esp <- c(4,5,3,6,5,4,7)
+ame <- c(63,68,64,68,72,89,94)
+lat <- c(61,70,59,71,71,92,88)
+price <- c(2000,2500,3000)
+names(price) <- c('espresso','americano','latte')
+
+sale.esp <- price['espresso'] * esp
+sale.ame <- price['americano'] * ame
+sale.lat <- price['latte'] * lat
+
+sale.day <- sale.esp + sale.ame + sale.lat
+sale.day
+names(sale.day) <- c('Mon','Tue','Wed','Thu','Fri','Sat','Sun')
+
+sale.sum <- sum(sale.day)
+cat('총 매출액 :',sale.sum,'원')
+
+sale.mean <- mean(sale.day)
+cat('평균 매출액 :',sale.mean,'원')
+
+result <- names(sale.day[sale.day >= sale.mean])
+cat('평균 매출액보다 높은 요일 :', result)
+
 
