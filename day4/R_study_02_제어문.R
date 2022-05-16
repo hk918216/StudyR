@@ -124,6 +124,3 @@ result$mul
 apply(iris[,1:4], 2, mean)      # 행/열 방향 지정 : 행 방향 작업의 경우 1, 열 방향 작업의 경우 2를 지정.
 apply(iris[,1:4], 2, sum)
 
-
-
-
