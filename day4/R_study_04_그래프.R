@@ -6,7 +6,7 @@ f.season <- table(favorite.season)
 str(f.season)
 
 barplot(f.season, main='좋아하는 계절', col = rainbow(4),
-        xlab = '계절', ylab = '빈도수',las=1,horiz=T, names=c('가을','봄','여름','겨울'))
+        xlab = '계절', ylab = '빈도수',las=1,horiz=F, names=c('가을','봄','여름','겨울'))
 
 ## 중첩막대그래프
 # 데이터 입력

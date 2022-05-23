@@ -50,7 +50,7 @@ d <= 5
 d[d>5]
 sum(d>5)  # TRUE 개수 출력
 sum(d[d>5])
-condi<- d > 5 & d < 8
+condi <- d > 5 & d < 8
 d[condi]
 
 ## LAB 카페 매출액

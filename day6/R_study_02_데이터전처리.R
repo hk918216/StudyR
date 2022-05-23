@@ -79,7 +79,7 @@ v1 <- c(1,7,6,8,4,2,3,9)
 sort(v1, decreasing = T)
 
 name <- c('정대일','강재구','신현석','홍길동')
-sort(name)  # 오름차숨
+sort(name)  # 오름차순
 sort(name, decreasing = T)  # 내림차순
 
 idx <- order(name)   # 2.3.1.4번째 순서에 있는 값이 순서대로 정렬됨
